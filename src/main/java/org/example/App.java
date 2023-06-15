@@ -8,6 +8,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        PagoFactory factory = new EfectivoPagoFactory();
+        Pago pago = factory.crearPago();
+        pago.realizarPago();
+
     }
 }
